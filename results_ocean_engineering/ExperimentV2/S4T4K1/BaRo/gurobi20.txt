@@ -1,0 +1,63 @@
+
+Gurobi 10.0.1 (linux64) logging started Sun Nov 26 15:40:21 2023
+
+Set parameter LogFile to value "ArtificialInstance/ExperimentV2/S4T4K1/BaRo/gurobi20.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: AMD EPYC 7H12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Academic license 656792 - for non-commercial use only - registered to b.___@student.vu.nl
+Optimize a model with 1899 rows, 2801 columns and 9684 nonzeros
+Model fingerprint: 0x7c34736e
+Variable types: 1 continuous, 2800 integer (2800 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+01]
+  Objective range  [1e+00, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 583.3975379
+Presolve time: 0.01s
+Presolved: 1899 rows, 2801 columns, 9684 nonzeros
+Variable types: 1 continuous, 2800 integer (2800 binary)
+
+Root relaxation: objective 4.750863e+01, 2156 iterations, 0.07 seconds (0.06 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   47.50863    0  400  583.39754   47.50863  91.9%     -    0s
+H    0     0                     185.6982668   47.50863  74.4%     -    0s
+H    0     0                     111.4943184   47.50863  57.4%     -    0s
+     0     0   51.70947    0  564  111.49432   51.70947  53.6%     -    0s
+H    0     0                      88.5104102   51.70947  41.6%     -    0s
+     0     0   51.70947    0  562   88.51041   51.70947  41.6%     -    0s
+H    0     0                      75.6627528   56.13025  25.8%     -    0s
+H    0     0                      69.9744042   56.13025  19.8%     -    0s
+H    0     0                      69.0694954   56.13025  18.7%     -    0s
+     0     0   56.13025    0  591   69.06950   56.13025  18.7%     -    0s
+     0     0   56.16114    0  598   69.06950   56.16114  18.7%     -    0s
+     0     0   57.28796    0  619   69.06950   57.28796  17.1%     -    0s
+     0     0   57.28818    0  654   69.06950   57.28818  17.1%     -    0s
+     0     0   57.70109    0  691   69.06950   57.70109  16.5%     -    0s
+     0     0   58.03986    0  670   69.06950   58.03986  16.0%     -    0s
+     0     0   58.05052    0  673   69.06950   58.05052  16.0%     -    0s
+     0     0   58.05052    0  681   69.06950   58.05052  16.0%     -    0s
+     0     0   59.09994    0  639   69.06950   59.09994  14.4%     -    1s
+     0     0   59.09994    0  575   69.06950   59.09994  14.4%     -    1s
+     0     2   59.09994    0  567   69.06950   59.09994  14.4%     -    1s
+H  258    42                      69.0434030   64.94168  5.94%   227    2s
+*  343     5              16      68.5885115   67.96131  0.91%   189    2s
+
+Cutting planes:
+  Gomory: 4
+  Zero half: 62
+  RLT: 62
+
+Explored 350 nodes (75490 simplex iterations) in 2.57 seconds (2.33 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 9: 68.5885 69.0434 69.0695 ... 583.398
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.858851149142e+01, best bound 6.858851149142e+01, gap 0.0000%

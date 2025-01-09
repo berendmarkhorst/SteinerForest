@@ -1,0 +1,50 @@
+
+Gurobi 10.0.1 (linux64) logging started Sun Nov 26 16:50:47 2023
+
+Set parameter LogFile to value "ArtificialInstance/ExperimentV2/S3T5K3/AdRo/gurobi84.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: AMD EPYC 7H12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Academic license 656792 - for non-commercial use only - registered to b.___@student.vu.nl
+Optimize a model with 21723 rows, 20185 columns and 78627 nonzeros
+Model fingerprint: 0x86e8694b
+Variable types: 1 continuous, 20184 integer (20184 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+01]
+  Objective range  [1e+00, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 9050 rows and 8793 columns
+Presolve time: 0.73s
+Presolved: 12673 rows, 11392 columns, 44833 nonzeros
+Variable types: 1 continuous, 11391 integer (11391 binary)
+Found heuristic solution: objective 470.8375611
+
+Root relaxation: objective 8.307998e+01, 7740 iterations, 0.41 seconds (0.26 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   83.07998    0  703  470.83756   83.07998  82.4%     -    1s
+H    0     0                     413.2503353   83.07998  79.9%     -    1s
+H    0     0                     338.9414536   83.07998  75.5%     -    1s
+H    0     0                      96.7482492   84.22572  12.9%     -    2s
+     0     0   84.22572    0  417   96.74825   84.22572  12.9%     -    2s
+H    0     0                      84.7397587   84.22572  0.61%     -    2s
+
+Cutting planes:
+  Gomory: 18
+  MIR: 1
+  GUB cover: 1
+  Zero half: 129
+  RLT: 2
+
+Explored 1 nodes (16856 simplex iterations) in 2.29 seconds (1.45 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 5: 84.7398 96.7482 338.941 ... 470.838
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.473975870024e+01, best bound 8.473975870024e+01, gap 0.0000%

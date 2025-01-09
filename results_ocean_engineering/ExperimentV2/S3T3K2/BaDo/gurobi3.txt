@@ -1,0 +1,44 @@
+
+Gurobi 10.0.1 (linux64) logging started Sun Nov 26 15:37:47 2023
+
+Set parameter LogFile to value "ArtificialInstance/ExperimentV2/S3T3K2/BaDo/gurobi3.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: AMD EPYC 7H12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Academic license 656792 - for non-commercial use only - registered to b.___@student.vu.nl
+Optimize a model with 420 rows, 720 columns and 2240 nonzeros
+Model fingerprint: 0x4b812a35
+Variable types: 0 continuous, 720 integer (720 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e+00, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 428.2134765
+Presolve time: 0.00s
+Presolved: 420 rows, 720 columns, 2240 nonzeros
+Variable types: 0 continuous, 720 integer (720 binary)
+
+Root relaxation: objective 3.285137e+01, 313 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   32.85137    0   80  428.21348   32.85137  92.3%     -    0s
+H    0     0                     133.5046449   32.85137  75.4%     -    0s
+H    0     0                     126.6245708   32.85137  74.1%     -    0s
+H    0     0                      58.0962077   32.85137  43.5%     -    0s
+     0     0   37.73355    0   24   58.09621   37.73355  35.0%     -    0s
+H    0     0                      40.4848799   37.73355  6.80%     -    0s
+     0     0   39.38454    0   24   40.48488   39.38454  2.72%     -    0s
+     0     0 infeasible    0        40.48488   40.48488  0.00%     -    0s
+
+Explored 1 nodes (615 simplex iterations) in 0.07 seconds (0.02 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 5: 40.4849 58.0962 126.625 ... 428.213
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.048487987253e+01, best bound 4.048487987253e+01, gap 0.0000%

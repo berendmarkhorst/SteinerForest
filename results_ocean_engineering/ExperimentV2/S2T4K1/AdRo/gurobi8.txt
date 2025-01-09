@@ -1,0 +1,49 @@
+
+Gurobi 10.0.1 (linux64) logging started Sun Nov 26 15:37:42 2023
+
+Set parameter LogFile to value "ArtificialInstance/ExperimentV2/S2T4K1/AdRo/gurobi8.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: AMD EPYC 7H12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Academic license 656792 - for non-commercial use only - registered to b.___@student.vu.nl
+Optimize a model with 2763 rows, 2644 columns and 10279 nonzeros
+Model fingerprint: 0x76f39d8e
+Variable types: 1 continuous, 2643 integer (2643 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+01]
+  Objective range  [1e+00, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 289 rows and 271 columns
+Presolve time: 0.04s
+Presolved: 2474 rows, 2373 columns, 9466 nonzeros
+Variable types: 1 continuous, 2372 integer (2372 binary)
+Found heuristic solution: objective 190.3680618
+
+Root relaxation: objective 4.677870e+01, 1622 iterations, 0.05 seconds (0.04 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   46.77870    0  191  190.36806   46.77870  75.4%     -    0s
+H    0     0                     104.7092705   46.77870  55.3%     -    0s
+H    0     0                      70.1517363   46.77870  33.3%     -    0s
+     0     0   47.84629    0   37   70.15174   47.84629  31.8%     -    0s
+H    0     0                      48.7011536   47.84629  1.76%     -    0s
+
+Cutting planes:
+  Gomory: 10
+  MIR: 3
+  StrongCG: 1
+  Zero half: 5
+  RLT: 1
+
+Explored 1 nodes (2366 simplex iterations) in 0.19 seconds (0.13 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 4: 48.7012 70.1517 104.709 190.368 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.870115359765e+01, best bound 4.870115359765e+01, gap 0.0000%

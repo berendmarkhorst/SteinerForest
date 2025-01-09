@@ -1,0 +1,43 @@
+
+Gurobi 10.0.1 (linux64) logging started Sun Nov 26 16:11:42 2023
+
+Set parameter LogFile to value "ArtificialInstance/ExperimentV2/S3T5K2/AdSp/gurobi75.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: AMD EPYC 7H12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Academic license 656792 - for non-commercial use only - registered to b.___@student.vu.nl
+Optimize a model with 11216 rows, 10572 columns and 40550 nonzeros
+Model fingerprint: 0x6d02533e
+Variable types: 0 continuous, 10572 integer (10572 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 2223 rows and 2263 columns
+Presolve time: 0.18s
+Presolved: 8993 rows, 8309 columns, 32753 nonzeros
+Variable types: 0 continuous, 8309 integer (8309 binary)
+
+Root relaxation: objective 7.645388e+01, 7703 iterations, 0.43 seconds (0.28 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   76.45388    0  854          -   76.45388      -     -    0s
+H    0     0                      96.8694677   78.23498  19.2%     -    1s
+     0     0   78.23498    0  509   96.86947   78.23498  19.2%     -    1s
+H    0     0                      79.4813496   78.23498  1.57%     -    1s
+     0     0   78.23498    0  517   79.48135   78.23498  1.57%     -    1s
+     0     0   78.51256    0  880   79.48135   78.51256  1.22%     -    1s
+     0     0     cutoff    0        79.48135   79.48135  0.00%     -    2s
+
+Explored 1 nodes (12875 simplex iterations) in 2.12 seconds (1.07 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 2: 79.4813 96.8695 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.948134958779e+01, best bound 7.948134958779e+01, gap 0.0000%

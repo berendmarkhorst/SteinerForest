@@ -1,0 +1,75 @@
+
+Gurobi 10.0.1 (linux64) logging started Sun Nov 26 16:17:24 2023
+
+Set parameter LogFile to value "ArtificialInstance/ExperimentV2/S4T3K3/AdRo/gurobi48.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: AMD EPYC 7H12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Academic license 656792 - for non-commercial use only - registered to b.___@student.vu.nl
+Optimize a model with 16074 rows, 15631 columns and 60442 nonzeros
+Model fingerprint: 0x1e965d5e
+Variable types: 1 continuous, 15630 integer (15630 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+01]
+  Objective range  [1e+00, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 3701 rows and 3888 columns
+Presolve time: 0.40s
+Presolved: 12373 rows, 11743 columns, 46312 nonzeros
+Variable types: 1 continuous, 11742 integer (11742 binary)
+
+Root relaxation: objective 7.709398e+01, 11730 iterations, 1.09 seconds (0.68 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   77.09398    0  942          -   77.09398      -     -    1s
+H    0     0                     145.7529105   77.09398  47.1%     -    1s
+     0     0   79.56639    0 1332  145.75291   79.56639  45.4%     -    2s
+H    0     0                      91.9404342   79.56639  13.5%     -    3s
+H    0     0                      87.7727373   79.56639  9.35%     -    3s
+H    0     0                      87.6210569   80.35543  8.29%     -    4s
+     0     0   80.35543    0 1427   87.62106   80.35543  8.29%     -    4s
+H    0     0                      85.9312744   80.35543  6.49%     -    4s
+     0     0   80.43902    0 1505   85.93127   80.43902  6.39%     -    5s
+     0     0   80.43902    0 1499   85.93127   80.43902  6.39%     -    5s
+     0     0   80.52170    0 1542   85.93127   80.52170  6.30%     -    6s
+     0     0   80.52170    0 1541   85.93127   80.52170  6.30%     -    6s
+     0     0   80.53246    0 1504   85.93127   80.53246  6.28%     -    6s
+     0     0   80.53246    0  933   85.93127   80.53246  6.28%     -    7s
+H    0     0                      84.6128041   80.53246  4.82%     -    8s
+H    0     0                      84.4376333   80.53246  4.62%     -    9s
+     0     0   80.53246    0 1515   84.43763   80.53246  4.62%     -    9s
+     0     0   80.53246    0 1390   84.43763   80.53246  4.62%     -    9s
+     0     0   80.53246    0 1415   84.43763   80.53246  4.62%     -    9s
+     0     0   80.53533    0 1409   84.43763   80.53533  4.62%     -    9s
+     0     0   80.53533    0 1409   84.43763   80.53533  4.62%     -    9s
+     0     0   80.53629    0 1420   84.43763   80.53629  4.62%     -    9s
+     0     0   80.53629    0 1420   84.43763   80.53629  4.62%     -    9s
+     0     0   80.53719    0 1445   84.43763   80.53719  4.62%     -   10s
+     0     0   80.53719    0 1476   84.43763   80.53719  4.62%     -   10s
+     0     0   80.70532    0 1534   84.43763   80.70532  4.42%     -   10s
+     0     0   80.85376    0 1533   84.43763   80.85376  4.24%     -   10s
+     0     0   81.39274    0 1509   84.43763   81.39274  3.61%     -   11s
+     0     0   81.39274    0 1539   84.43763   81.39274  3.61%     -   11s
+     0     0   81.81696    0 1595   84.43763   81.81696  3.10%     -   12s
+     0     0   81.81696    0 1467   84.43763   81.81696  3.10%     -   12s
+     0     2   81.81696    0 1467   84.43763   81.81696  3.10%     -   13s
+    27    10     cutoff    5        84.43763   81.99735  2.89%   950   15s
+
+Cutting planes:
+  Gomory: 5
+  MIR: 2
+  Zero half: 42
+  RLT: 11
+
+Explored 149 nodes (95056 simplex iterations) in 16.14 seconds (11.16 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 7: 84.4376 84.6128 85.9313 ... 145.753
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.443763332598e+01, best bound 8.443763332598e+01, gap 0.0000%

@@ -1,0 +1,49 @@
+
+Gurobi 10.0.1 (linux64) logging started Sun Nov 26 15:54:11 2023
+
+Set parameter LogFile to value "ArtificialInstance/ExperimentV2/S4T4K2/AdSp/gurobi29.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: AMD EPYC 7H12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Academic license 656792 - for non-commercial use only - registered to b.___@student.vu.nl
+Optimize a model with 11270 rows, 10815 columns and 41285 nonzeros
+Model fingerprint: 0x8da4a23d
+Variable types: 0 continuous, 10815 integer (10815 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [9e-01, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 1956 rows and 2033 columns
+Presolve time: 0.17s
+Presolved: 9314 rows, 8782 columns, 34441 nonzeros
+Variable types: 0 continuous, 8782 integer (8782 binary)
+
+Root relaxation: objective 6.178278e+01, 5657 iterations, 0.23 seconds (0.16 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   61.78278    0  570          -   61.78278      -     -    0s
+H    0     0                     114.6272121   61.78278  46.1%     -    0s
+H    0     0                     107.7619275   61.78278  42.7%     -    0s
+     0     0   64.13076    0  533  107.76193   64.13076  40.5%     -    0s
+H    0     0                      74.4765420   64.13076  13.9%     -    0s
+H    0     0                      65.7598056   64.13076  2.48%     -    1s
+H    0     0                      64.7682463   64.13076  0.98%     -    1s
+     0     0     cutoff    0        64.76825   64.76825  0.00%     -    1s
+
+Cutting planes:
+  Gomory: 14
+  MIR: 1
+  Zero half: 84
+
+Explored 1 nodes (10085 simplex iterations) in 1.08 seconds (0.67 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 5: 64.7682 65.7598 74.4765 ... 114.627
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.476824627374e+01, best bound 6.476824627374e+01, gap 0.0000%

@@ -1,0 +1,49 @@
+
+Gurobi 10.0.1 (linux64) logging started Sun Nov 26 15:42:40 2023
+
+Set parameter LogFile to value "ArtificialInstance/ExperimentV2/S2T5K1/AdSp/gurobi79.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: AMD EPYC 7H12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Academic license 656792 - for non-commercial use only - registered to b.___@student.vu.nl
+Optimize a model with 3313 rows, 3123 columns and 11827 nonzeros
+Model fingerprint: 0x06738986
+Variable types: 0 continuous, 3123 integer (3123 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e+00, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 361 rows and 337 columns
+Presolve time: 0.04s
+Presolved: 2952 rows, 2786 columns, 10796 nonzeros
+Variable types: 0 continuous, 2786 integer (2786 binary)
+Found heuristic solution: objective 582.6644034
+
+Root relaxation: objective 4.261218e+01, 2187 iterations, 0.07 seconds (0.06 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   42.61218    0  167  582.66440   42.61218  92.7%     -    0s
+H    0     0                     125.1232020   42.61218  65.9%     -    0s
+H    0     0                      65.7430276   42.61218  35.2%     -    0s
+     0     0   43.93368    0  181   65.74303   43.93368  33.2%     -    0s
+H    0     0                      44.8438551   43.93368  2.03%     -    0s
+     0     0     cutoff    0        44.84386   44.84386  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 12
+  MIR: 1
+  Zero half: 33
+  RLT: 3
+
+Explored 1 nodes (3450 simplex iterations) in 0.26 seconds (0.17 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 4: 44.8439 65.743 125.123 582.664 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.484385511858e+01, best bound 4.484385511858e+01, gap 0.0000%

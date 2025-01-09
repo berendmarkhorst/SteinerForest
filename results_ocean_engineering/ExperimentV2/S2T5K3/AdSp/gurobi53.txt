@@ -1,0 +1,47 @@
+
+Gurobi 10.0.1 (linux64) logging started Sun Nov 26 16:01:40 2023
+
+Set parameter LogFile to value "ArtificialInstance/ExperimentV2/S2T5K3/AdSp/gurobi53.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: AMD EPYC 7H12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Academic license 656792 - for non-commercial use only - registered to b.___@student.vu.nl
+Optimize a model with 16270 rows, 15138 columns and 58558 nonzeros
+Model fingerprint: 0x71ac6b79
+Variable types: 0 continuous, 15138 integer (15138 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e+00, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 6080 rows and 5924 columns
+Presolve time: 0.33s
+Presolved: 10190 rows, 9214 columns, 36440 nonzeros
+Variable types: 0 continuous, 9214 integer (9214 binary)
+
+Root relaxation: objective 7.770594e+01, 4982 iterations, 0.20 seconds (0.13 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   77.70594    0  401          -   77.70594      -     -    0s
+H    0     0                     140.4990910   77.70594  44.7%     -    0s
+H    0     0                     133.3171395   77.70594  41.7%     -    0s
+H    0     0                     128.3693070   77.70594  39.5%     -    0s
+H    0     0                      79.4689350   77.70594  2.22%     -    0s
+     0     0     cutoff    0        79.46894   79.46894  0.00%     -    1s
+
+Cutting planes:
+  Gomory: 3
+  Zero half: 39
+  RLT: 1
+
+Explored 1 nodes (8792 simplex iterations) in 1.03 seconds (0.65 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 4: 79.4689 128.369 133.317 140.499 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.946893500938e+01, best bound 7.946893500938e+01, gap 0.0000%

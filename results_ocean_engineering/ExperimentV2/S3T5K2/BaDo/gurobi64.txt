@@ -1,0 +1,50 @@
+
+Gurobi 10.0.1 (linux64) logging started Sun Nov 26 16:05:56 2023
+
+Set parameter LogFile to value "ArtificialInstance/ExperimentV2/S3T5K2/BaDo/gurobi64.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: AMD EPYC 7H12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Academic license 656792 - for non-commercial use only - registered to b.___@student.vu.nl
+Optimize a model with 840 rows, 1360 columns and 4480 nonzeros
+Model fingerprint: 0x7f8ba814
+Variable types: 0 continuous, 1360 integer (1360 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e+00, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 454.2709837
+Presolve time: 0.01s
+Presolved: 840 rows, 1360 columns, 4480 nonzeros
+Variable types: 0 continuous, 1360 integer (1360 binary)
+
+Root relaxation: objective 3.480762e+01, 684 iterations, 0.01 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   34.80762    0  162  454.27098   34.80762  92.3%     -    0s
+H    0     0                     118.3671569   34.80762  70.6%     -    0s
+H    0     0                      69.6152414   34.80762  50.0%     -    0s
+H    0     0                      62.7872519   40.78136  35.0%     -    0s
+     0     0   40.78136    0  102   62.78725   40.78136  35.0%     -    0s
+H    0     0                      43.6577198   40.78136  6.59%     -    0s
+     0     0   43.15362    0   70   43.65772   43.15362  1.15%     -    0s
+     0     0   43.15362    0   64   43.65772   43.15362  1.15%     -    0s
+     0     0   43.65772    0   57   43.65772   43.65772  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 7
+  Zero half: 28
+  RLT: 1
+
+Explored 1 nodes (1733 simplex iterations) in 0.13 seconds (0.05 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 5: 43.6577 62.7873 69.6152 ... 454.271
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.365771977369e+01, best bound 4.365771977369e+01, gap 0.0000%

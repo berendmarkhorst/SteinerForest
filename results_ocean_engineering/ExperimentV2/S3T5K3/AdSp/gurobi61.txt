@@ -1,0 +1,46 @@
+
+Gurobi 10.0.1 (linux64) logging started Sun Nov 26 16:31:13 2023
+
+Set parameter LogFile to value "ArtificialInstance/ExperimentV2/S3T5K3/AdSp/gurobi61.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: AMD EPYC 7H12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Academic license 656792 - for non-commercial use only - registered to b.___@student.vu.nl
+Optimize a model with 21720 rows, 20184 columns and 78090 nonzeros
+Model fingerprint: 0x6749ee63
+Variable types: 0 continuous, 20184 integer (20184 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 8965 rows and 8731 columns
+Presolve time: 0.52s
+Presolved: 12755 rows, 11453 columns, 44904 nonzeros
+Variable types: 0 continuous, 11453 integer (11453 binary)
+
+Root relaxation: objective 8.093704e+01, 4797 iterations, 0.16 seconds (0.09 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   80.93704    0  328          -   80.93704      -     -    0s
+H    0     0                     122.2215665   80.93704  33.8%     -    0s
+H    0     0                     113.0009235   80.93704  28.4%     -    0s
+H    0     0                     108.3865657   80.93704  25.3%     -    1s
+H    0     0                      82.2662961   80.93704  1.62%     -    1s
+H    0     0                      81.8114046   80.93704  1.07%     -    1s
+
+Cutting planes:
+  Gomory: 4
+  Zero half: 32
+
+Explored 1 nodes (7379 simplex iterations) in 1.05 seconds (0.67 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 5: 81.8114 82.2663 108.387 ... 122.222
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.181140456431e+01, best bound 8.181140456431e+01, gap 0.0000%

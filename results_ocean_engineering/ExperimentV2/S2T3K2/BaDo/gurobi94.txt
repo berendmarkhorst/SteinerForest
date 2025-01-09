@@ -1,0 +1,56 @@
+
+Gurobi 10.0.1 (linux64) logging started Sun Nov 26 15:46:48 2023
+
+Set parameter LogFile to value "ArtificialInstance/ExperimentV2/S2T3K2/BaDo/gurobi94.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: AMD EPYC 7H12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Academic license 656792 - for non-commercial use only - registered to b.___@student.vu.nl
+Optimize a model with 420 rows, 720 columns and 2240 nonzeros
+Model fingerprint: 0x0fdaf3f0
+Variable types: 0 continuous, 720 integer (720 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e+00, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 314.8940219
+Presolve time: 0.00s
+Presolved: 420 rows, 720 columns, 2240 nonzeros
+Variable types: 0 continuous, 720 integer (720 binary)
+
+Root relaxation: objective 3.524430e+01, 360 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   35.24430    0   70  314.89402   35.24430  88.8%     -    0s
+H    0     0                      85.2997381   35.24430  58.7%     -    0s
+H    0     0                      82.8433306   35.24430  57.5%     -    0s
+H    0     0                      81.4764497   35.59207  56.3%     -    0s
+     0     0   37.44173    0   59   81.47645   37.44173  54.0%     -    0s
+H    0     0                      47.0107975   37.44173  20.4%     -    0s
+     0     0   41.30485    0   93   47.01080   41.30485  12.1%     -    0s
+H    0     0                      46.2050200   42.77826  7.42%     -    0s
+H    0     0                      45.8983997   42.77826  6.80%     -    0s
+H    0     0                      45.4435081   42.77826  5.86%     -    0s
+     0     0   43.20994    0   66   45.44351   43.20994  4.92%     -    0s
+     0     0   43.20994    0   60   45.44351   43.20994  4.92%     -    0s
+     0     0   43.55481    0   47   45.44351   43.55481  4.16%     -    0s
+     0     0   44.01540    0   28   45.44351   44.01540  3.14%     -    0s
+     0     0     cutoff    0        45.44351   45.44351  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 12
+  Zero half: 22
+  RLT: 2
+
+Explored 1 nodes (923 simplex iterations) in 0.11 seconds (0.03 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 8: 45.4435 45.8984 46.205 ... 314.894
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.544350813344e+01, best bound 4.544350813344e+01, gap 0.0000%

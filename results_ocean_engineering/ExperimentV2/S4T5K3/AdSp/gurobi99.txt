@@ -1,0 +1,47 @@
+
+Gurobi 10.0.1 (linux64) logging started Sun Nov 26 18:17:15 2023
+
+Set parameter LogFile to value "ArtificialInstance/ExperimentV2/S4T5K3/AdSp/gurobi99.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: AMD EPYC 7H12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Academic license 656792 - for non-commercial use only - registered to b.___@student.vu.nl
+Optimize a model with 27170 rows, 25230 columns and 97754 nonzeros
+Model fingerprint: 0x41deac6e
+Variable types: 0 continuous, 25230 integer (25230 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [9e-01, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 10842 rows and 10617 columns
+Presolve time: 0.91s
+Presolved: 16328 rows, 14613 columns, 57308 nonzeros
+Variable types: 0 continuous, 14613 integer (14613 binary)
+
+Root relaxation: objective 8.308555e+01, 8701 iterations, 0.44 seconds (0.31 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   83.08555    0  427          -   83.08555      -     -    1s
+H    0     0                     127.1312594   83.08555  34.6%     -    1s
+H    0     0                     109.5394519   83.08555  24.2%     -    1s
+H    0     0                      87.8789484   84.91973  3.37%     -    2s
+     0     0   84.91973    0  959   87.87895   84.91973  3.37%     -    2s
+H    0     0                      85.4450315   84.91973  0.61%     -    2s
+     0     0   85.35537    0  928   85.44503   85.35537  0.10%     -    2s
+
+Cutting planes:
+  Gomory: 5
+  Zero half: 52
+
+Explored 1 nodes (17197 simplex iterations) in 2.99 seconds (1.97 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 4: 85.445 87.8789 109.539 127.131 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.544503154468e+01, best bound 8.544503154468e+01, gap 0.0000%

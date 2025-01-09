@@ -1,0 +1,51 @@
+
+Gurobi 10.0.1 (linux64) logging started Sun Nov 26 15:54:31 2023
+
+Set parameter LogFile to value "ArtificialInstance/ExperimentV2/S3T3K2/AdRo/gurobi80.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: AMD EPYC 7H12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Academic license 656792 - for non-commercial use only - registered to b.___@student.vu.nl
+Optimize a model with 6787 rows, 6733 columns and 25891 nonzeros
+Model fingerprint: 0xbd9a5cac
+Variable types: 1 continuous, 6732 integer (6732 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+01]
+  Objective range  [1e+00, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 1019 rows and 1065 columns
+Presolve time: 0.10s
+Presolved: 5768 rows, 5668 columns, 22471 nonzeros
+Variable types: 1 continuous, 5667 integer (5667 binary)
+
+Root relaxation: objective 5.550267e+01, 3827 iterations, 0.19 seconds (0.15 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   55.50267    0  159          -   55.50267      -     -    0s
+H    0     0                     103.5104329   55.50267  46.4%     -    0s
+H    0     0                      75.9487160   55.50267  26.9%     -    0s
+H    0     0                      59.5095530   55.50267  6.73%     -    0s
+     0     0   57.67594    0  302   59.50955   57.67594  3.08%     -    0s
+     0     0   58.32496    0  122   59.50955   58.32496  1.99%     -    1s
+     0     0   58.87255    0   44   59.50955   58.87255  1.07%     -    1s
+H    0     0                      58.8725548   58.87255  0.00%     -    1s
+
+Cutting planes:
+  Gomory: 4
+  Cover: 1
+  MIR: 4
+  StrongCG: 1
+  GUB cover: 2
+
+Explored 1 nodes (7972 simplex iterations) in 1.06 seconds (0.52 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 4: 58.8726 59.5096 75.9487 103.51 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.887255481423e+01, best bound 5.887255481423e+01, gap 0.0000%

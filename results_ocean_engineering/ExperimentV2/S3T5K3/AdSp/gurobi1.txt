@@ -1,0 +1,47 @@
+
+Gurobi 10.0.1 (linux64) logging started Sun Nov 26 15:38:05 2023
+
+Set parameter LogFile to value "ArtificialInstance/ExperimentV2/S3T5K3/AdSp/gurobi1.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: AMD EPYC 7H12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Academic license 656792 - for non-commercial use only - registered to b.___@student.vu.nl
+Optimize a model with 21720 rows, 20184 columns and 78154 nonzeros
+Model fingerprint: 0x3244dbd0
+Variable types: 0 continuous, 20184 integer (20184 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 9708 rows and 9385 columns
+Presolve time: 0.68s
+Presolved: 12012 rows, 10799 columns, 41916 nonzeros
+Variable types: 0 continuous, 10799 integer (10799 binary)
+
+Root relaxation: objective 8.267474e+01, 6475 iterations, 0.29 seconds (0.19 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   82.67474    0  517          -   82.67474      -     -    1s
+H    0     0                     134.5743649   82.67474  38.6%     -    1s
+H    0     0                     129.0820106   82.67474  36.0%     -    1s
+H    0     0                     102.3316198   83.87486  18.0%     -    1s
+     0     0   83.87486    0  659  102.33162   83.87486  18.0%     -    1s
+H    0     0                      84.1463105   83.87486  0.32%     -    1s
+
+Cutting planes:
+  Gomory: 13
+  Zero half: 78
+  RLT: 2
+
+Explored 1 nodes (11095 simplex iterations) in 1.81 seconds (1.14 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 4: 84.1463 102.332 129.082 134.574 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.414631049945e+01, best bound 8.414631049945e+01, gap 0.0000%

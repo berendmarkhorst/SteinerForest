@@ -1,0 +1,46 @@
+
+Gurobi 10.0.1 (linux64) logging started Sun Nov 26 15:49:39 2023
+
+Set parameter LogFile to value "ArtificialInstance/ExperimentV2/S3T3K2/AdSp/gurobi59.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: AMD EPYC 7H12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Academic license 656792 - for non-commercial use only - registered to b.___@student.vu.nl
+Optimize a model with 6784 rows, 6732 columns and 25474 nonzeros
+Model fingerprint: 0x80f42968
+Variable types: 0 continuous, 6732 integer (6732 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 936 rows and 988 columns
+Presolve time: 0.10s
+Presolved: 5848 rows, 5744 columns, 22234 nonzeros
+Variable types: 0 continuous, 5744 integer (5744 binary)
+
+Root relaxation: objective 5.300276e+01, 5901 iterations, 0.35 seconds (0.23 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   53.00276    0  468          -   53.00276      -     -    0s
+H    0     0                     112.2491641   53.00276  52.8%     -    0s
+H    0     0                     108.2522229   53.00276  51.0%     -    0s
+H    0     0                      85.5856319   53.00276  38.1%     -    0s
+H    0     0                      53.4437590   53.00276  0.83%     -    0s
+     0     0     cutoff    0        53.44376   53.44376  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 8
+  Zero half: 13
+
+Explored 1 nodes (7229 simplex iterations) in 0.71 seconds (0.42 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 4: 53.4438 85.5856 108.252 112.249 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.344375896109e+01, best bound 5.344375896109e+01, gap 0.0000%

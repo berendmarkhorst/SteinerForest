@@ -1,0 +1,47 @@
+
+Gurobi 10.0.1 (linux64) logging started Sun Nov 26 16:24:57 2023
+
+Set parameter LogFile to value "ArtificialInstance/ExperimentV2/S4T3K3/AdSp/gurobi58.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: AMD EPYC 7H12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Academic license 656792 - for non-commercial use only - registered to b.___@student.vu.nl
+Optimize a model with 16070 rows, 15630 columns and 59740 nonzeros
+Model fingerprint: 0x4dc05157
+Variable types: 0 continuous, 15630 integer (15630 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [9e-01, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 3420 rows and 3644 columns
+Presolve time: 0.26s
+Presolved: 12650 rows, 11986 columns, 46701 nonzeros
+Variable types: 0 continuous, 11986 integer (11986 binary)
+
+Root relaxation: objective 7.453854e+01, 10674 iterations, 0.77 seconds (0.46 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   74.53854    0  673          -   74.53854      -     -    1s
+     0     0   75.74498    0 1084          -   75.74498      -     -    2s
+H    0     0                      88.2180339   77.02492  12.7%     -    2s
+H    0     0                      77.1944013   77.02492  0.22%     -    3s
+     0     0   77.02492    0 1408   77.19440   77.02492  0.22%     -    3s
+     0     0     cutoff    0        77.19440   77.19440  0.00%     -    3s
+
+Cutting planes:
+  Gomory: 16
+  Lift-and-project: 2
+  Zero half: 47
+
+Explored 1 nodes (18965 simplex iterations) in 3.18 seconds (2.03 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 2: 77.1944 88.218 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.719440134496e+01, best bound 7.719440134496e+01, gap 0.0000%

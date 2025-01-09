@@ -1,0 +1,52 @@
+
+Gurobi 10.0.1 (linux64) logging started Sun Nov 26 15:46:12 2023
+
+Set parameter LogFile to value "ArtificialInstance/ExperimentV2/S4T3K1/BaSp/gurobi100.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: AMD EPYC 7H12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Academic license 656792 - for non-commercial use only - registered to b.___@student.vu.nl
+Optimize a model with 1370 rows, 2000 columns and 6240 nonzeros
+Model fingerprint: 0xf0e13218
+Variable types: 0 continuous, 2000 integer (2000 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [9e-01, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 641.0328958
+Presolve time: 0.01s
+Presolved: 1370 rows, 2000 columns, 6240 nonzeros
+Variable types: 0 continuous, 2000 integer (2000 binary)
+
+Root relaxation: objective 3.202080e+01, 898 iterations, 0.01 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   32.02080    0  130  641.03290   32.02080  95.0%     -    0s
+H    0     0                      88.0737496   32.02080  63.6%     -    0s
+H    0     0                      42.2306198   36.00917  14.7%     -    0s
+     0     0   36.00917    0  164   42.23062   36.00917  14.7%     -    0s
+H    0     0                      40.1761639   36.00917  10.4%     -    0s
+     0     0   37.71931    0  253   40.17616   37.71931  6.12%     -    0s
+     0     0   37.71931    0  130   40.17616   37.71931  6.12%     -    0s
+     0     0   38.20522    0  142   40.17616   38.20522  4.91%     -    0s
+     0     0   38.42157    0  143   40.17616   38.42157  4.37%     -    0s
+
+Cutting planes:
+  Gomory: 14
+  Lift-and-project: 23
+  Clique: 13
+  Zero half: 36
+  RLT: 1
+
+Explored 1 nodes (3133 simplex iterations) in 0.31 seconds (0.13 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 4: 40.1762 42.2306 88.0737 641.033 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.017616392382e+01, best bound 4.017446759840e+01, gap 0.0042%

@@ -1,0 +1,48 @@
+
+Gurobi 10.0.1 (linux64) logging started Sun Nov 26 16:18:33 2023
+
+Set parameter LogFile to value "ArtificialInstance/ExperimentV2/S3T4K3/AdRo/gurobi66.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: AMD EPYC 7H12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Academic license 656792 - for non-commercial use only - registered to b.___@student.vu.nl
+Optimize a model with 17283 rows, 16345 columns and 63497 nonzeros
+Model fingerprint: 0x89c1e555
+Variable types: 1 continuous, 16344 integer (16344 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+01]
+  Objective range  [1e+00, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 5445 rows and 5503 columns
+Presolve time: 0.55s
+Presolved: 11838 rows, 10842 columns, 43014 nonzeros
+Variable types: 1 continuous, 10841 integer (10841 binary)
+
+Root relaxation: objective 8.280153e+01, 12909 iterations, 1.17 seconds (0.75 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   82.80153    0  881          -   82.80153      -     -    2s
+H    0     0                     294.2536772   82.80153  71.9%     -    2s
+H    0     0                     135.5073781   82.80153  38.9%     -    2s
+H    0     0                      85.8558412   83.15171  3.15%     -    2s
+     0     0   83.15171    0  924   85.85584   83.15171  3.15%     -    2s
+H    0     0                      83.8039481   83.15171  0.78%     -    3s
+
+Cutting planes:
+  Gomory: 5
+  Lift-and-project: 4
+  Zero half: 47
+  RLT: 2
+
+Explored 1 nodes (17345 simplex iterations) in 3.10 seconds (1.89 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 4: 83.8039 85.8558 135.507 294.254 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.380394809478e+01, best bound 8.380394809478e+01, gap 0.0000%

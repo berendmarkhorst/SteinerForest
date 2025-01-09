@@ -1,0 +1,43 @@
+
+Gurobi 10.0.1 (linux64) logging started Sun Nov 26 15:40:02 2023
+
+Set parameter LogFile to value "ArtificialInstance/ExperimentV2/S4T4K3/AdRo/gurobi3.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: AMD EPYC 7H12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Academic license 656792 - for non-commercial use only - registered to b.___@student.vu.nl
+Optimize a model with 21624 rows, 20431 columns and 79424 nonzeros
+Model fingerprint: 0xfba8b5ae
+Variable types: 1 continuous, 20430 integer (20430 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+01]
+  Objective range  [1e+00, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 6046 rows and 6102 columns
+Presolve time: 0.45s
+Presolved: 15578 rows, 14329 columns, 57030 nonzeros
+Variable types: 1 continuous, 14328 integer (14328 binary)
+
+Root relaxation: objective 8.152206e+01, 12129 iterations, 1.05 seconds (0.69 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   81.52206    0 1039          -   81.52206      -     -    2s
+H    0     0                     126.2226515   81.52206  35.4%     -    2s
+     0     0   83.11399    0  352  126.22265   83.11399  34.2%     -    2s
+H    0     0                      85.1444709   83.11399  2.38%     -    2s
+     0     0   83.19100    0  356   85.14447   83.19100  2.29%     -    3s
+     0     0   84.38502    0  636   85.14447   84.38502  0.89%     -    4s
+     0     0     cutoff    0        85.14447   85.14447  0.00%     -    4s
+
+Explored 1 nodes (28775 simplex iterations) in 4.62 seconds (2.77 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 2: 85.1445 126.223 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.514447088128e+01, best bound 8.514447088128e+01, gap 0.0000%

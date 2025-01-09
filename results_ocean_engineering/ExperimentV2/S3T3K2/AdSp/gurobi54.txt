@@ -1,0 +1,50 @@
+
+Gurobi 10.0.1 (linux64) logging started Sun Nov 26 15:48:43 2023
+
+Set parameter LogFile to value "ArtificialInstance/ExperimentV2/S3T3K2/AdSp/gurobi54.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: AMD EPYC 7H12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Academic license 656792 - for non-commercial use only - registered to b.___@student.vu.nl
+Optimize a model with 6784 rows, 6732 columns and 25472 nonzeros
+Model fingerprint: 0x6e1d0275
+Variable types: 0 continuous, 6732 integer (6732 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 976 rows and 1040 columns
+Presolve time: 0.10s
+Presolved: 5808 rows, 5692 columns, 22050 nonzeros
+Variable types: 0 continuous, 5692 integer (5692 binary)
+Found heuristic solution: objective 429.7162458
+
+Root relaxation: objective 5.502221e+01, 4738 iterations, 0.20 seconds (0.12 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   55.02221    0  178  429.71625   55.02221  87.2%     -    0s
+H    0     0                     123.2477010   55.02221  55.4%     -    0s
+H    0     0                     117.6156519   55.02221  53.2%     -    0s
+H    0     0                      58.1141991   55.02221  5.32%     -    0s
+     0     0   55.41182    0  568   58.11420   55.41182  4.65%     -    0s
+     0     0   55.41182    0  165   58.11420   55.41182  4.65%     -    0s
+     0     0   56.60584    0   57   58.11420   56.60584  2.60%     -    0s
+H    0     0                      57.0837233   56.60584  0.84%     -    0s
+
+Cutting planes:
+  Gomory: 10
+  Lift-and-project: 5
+  Zero half: 17
+
+Explored 1 nodes (9780 simplex iterations) in 1.02 seconds (0.48 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 5: 57.0837 58.1142 117.616 ... 429.716
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.708372331883e+01, best bound 5.708372270337e+01, gap 0.0000%

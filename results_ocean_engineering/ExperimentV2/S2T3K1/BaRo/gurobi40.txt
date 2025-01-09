@@ -1,0 +1,48 @@
+
+Gurobi 10.0.1 (linux64) logging started Sun Nov 26 15:38:24 2023
+
+Set parameter LogFile to value "ArtificialInstance/ExperimentV2/S2T3K1/BaRo/gurobi40.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: AMD EPYC 7H12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Academic license 656792 - for non-commercial use only - registered to b.___@student.vu.nl
+Optimize a model with 792 rows, 1201 columns and 4002 nonzeros
+Model fingerprint: 0x92988505
+Variable types: 1 continuous, 1200 integer (1200 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+01]
+  Objective range  [1e+00, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 327.5131271
+Presolve time: 0.01s
+Presolved: 792 rows, 1201 columns, 4002 nonzeros
+Variable types: 1 continuous, 1200 integer (1200 binary)
+
+Root relaxation: objective 2.250829e+01, 460 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   22.50829    0   70  327.51313   22.50829  93.1%     -    0s
+H    0     0                      50.9628311   22.50829  55.8%     -    0s
+H    0     0                      29.2984922   25.11957  14.3%     -    0s
+     0     0   25.11957    0   50   29.29849   25.11957  14.3%     -    0s
+H    0     0                      26.7362372   25.11957  6.05%     -    0s
+H    0     0                      25.6691300   25.11957  2.14%     -    0s
+
+Cutting planes:
+  Gomory: 4
+  MIR: 2
+  StrongCG: 3
+  Zero half: 8
+
+Explored 1 nodes (810 simplex iterations) in 0.06 seconds (0.03 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 5: 25.6691 26.7362 29.2985 ... 327.513
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.566912997888e+01, best bound 2.566912997888e+01, gap 0.0000%

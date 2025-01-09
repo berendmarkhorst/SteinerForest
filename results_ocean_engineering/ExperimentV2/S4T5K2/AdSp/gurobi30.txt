@@ -1,0 +1,46 @@
+
+Gurobi 10.0.1 (linux64) logging started Sun Nov 26 16:03:29 2023
+
+Set parameter LogFile to value "ArtificialInstance/ExperimentV2/S4T5K2/AdSp/gurobi30.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: AMD EPYC 7H12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Academic license 656792 - for non-commercial use only - registered to b.___@student.vu.nl
+Optimize a model with 14040 rows, 13215 columns and 50745 nonzeros
+Model fingerprint: 0x61fc5219
+Variable types: 0 continuous, 13215 integer (13215 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [9e-01, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 3173 rows and 3250 columns
+Presolve time: 0.26s
+Presolved: 10867 rows, 9965 columns, 38855 nonzeros
+Variable types: 0 continuous, 9965 integer (9965 binary)
+
+Root relaxation: objective 7.582840e+01, 8436 iterations, 0.38 seconds (0.24 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   75.82840    0  711          -   75.82840      -     -    0s
+H    0     0                     139.1327990   75.82840  45.5%     -    0s
+H    0     0                     137.4127804   75.82840  44.8%     -    0s
+     0     0   77.10196    0  701  137.41278   77.10196  43.9%     -    1s
+H    0     0                      78.0237967   77.10196  1.18%     -    1s
+     0     0   77.42394    0 1147   78.02380   77.42394  0.77%     -    1s
+
+Cutting planes:
+  Gomory: 4
+  Zero half: 6
+
+Explored 1 nodes (13940 simplex iterations) in 2.10 seconds (1.21 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 3: 78.0238 137.413 139.133 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.802379669783e+01, best bound 7.802379669783e+01, gap 0.0000%

@@ -1,0 +1,49 @@
+
+Gurobi 10.0.1 (linux64) logging started Sun Nov 26 15:53:09 2023
+
+Set parameter LogFile to value "ArtificialInstance/ExperimentV2/S2T3K3/AdRo/gurobi80.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: AMD EPYC 7H12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Academic license 656792 - for non-commercial use only - registered to b.___@student.vu.nl
+Optimize a model with 9612 rows, 9379 columns and 36130 nonzeros
+Model fingerprint: 0x5cf94264
+Variable types: 1 continuous, 9378 integer (9378 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+01]
+  Objective range  [1e+00, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 1890 rows and 1938 columns
+Presolve time: 0.16s
+Presolved: 7722 rows, 7441 columns, 29305 nonzeros
+Variable types: 1 continuous, 7440 integer (7440 binary)
+Found heuristic solution: objective 365.5473312
+
+Root relaxation: objective 6.874591e+01, 4365 iterations, 0.32 seconds (0.24 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   68.74591    0  351  365.54733   68.74591  81.2%     -    0s
+H    0     0                     296.4525181   68.74591  76.8%     -    0s
+H    0     0                     281.6978971   68.74591  75.6%     -    0s
+H    0     0                      81.1260041   69.14179  14.8%     -    0s
+     0     0   69.14179    0  355   81.12600   69.14179  14.8%     -    0s
+H    0     0                      71.6628325   69.14179  3.52%     -    0s
+H    0     0                      70.2409023   69.14179  1.56%     -    1s
+
+Cutting planes:
+  Gomory: 16
+  Lift-and-project: 4
+  Zero half: 15
+
+Explored 1 nodes (7074 simplex iterations) in 1.04 seconds (0.65 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 6: 70.2409 71.6628 81.126 ... 365.547
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.024090233386e+01, best bound 7.024090233386e+01, gap 0.0000%

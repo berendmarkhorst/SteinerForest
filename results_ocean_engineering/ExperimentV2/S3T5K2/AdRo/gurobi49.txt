@@ -1,0 +1,45 @@
+
+Gurobi 10.0.1 (linux64) logging started Sun Nov 26 15:59:39 2023
+
+Set parameter LogFile to value "ArtificialInstance/ExperimentV2/S3T5K2/AdRo/gurobi49.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: AMD EPYC 7H12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Academic license 656792 - for non-commercial use only - registered to b.___@student.vu.nl
+Optimize a model with 11219 rows, 10573 columns and 41009 nonzeros
+Model fingerprint: 0xe08c6dd3
+Variable types: 1 continuous, 10572 integer (10572 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+01]
+  Objective range  [1e+00, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 2390 rows and 2391 columns
+Presolve time: 0.19s
+Presolved: 8829 rows, 8182 columns, 32603 nonzeros
+Variable types: 1 continuous, 8181 integer (8181 binary)
+
+Root relaxation: objective 7.471164e+01, 7677 iterations, 0.45 seconds (0.27 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   74.71164    0  617          -   74.71164      -     -    0s
+H    0     0                     145.8767885   74.71164  48.8%     -    0s
+H    0     0                     116.4723450   74.71164  35.9%     -    0s
+     0     0   76.18175    0  710  116.47234   76.18175  34.6%     -    1s
+H    0     0                      80.0071827   76.18175  4.78%     -    1s
+     0     0   77.57141    0 1168   80.00718   77.57141  3.04%     -    1s
+     0     0   77.61076    0  387   80.00718   77.61076  3.00%     -    2s
+     0     0   79.44296    0  477   80.00718   79.44296  0.71%     -    2s
+     0     0     cutoff    0        80.00718   80.00718  0.00%     -    2s
+
+Explored 1 nodes (21100 simplex iterations) in 2.52 seconds (1.36 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 3: 80.0072 116.472 145.877 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.000718273326e+01, best bound 8.000718273326e+01, gap 0.0000%

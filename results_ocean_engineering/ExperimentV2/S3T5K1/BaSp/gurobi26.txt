@@ -1,0 +1,47 @@
+
+Gurobi 10.0.1 (linux64) logging started Sun Nov 26 15:40:44 2023
+
+Set parameter LogFile to value "ArtificialInstance/ExperimentV2/S3T5K1/BaSp/gurobi26.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: AMD EPYC 7H12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Academic license 656792 - for non-commercial use only - registered to b.___@student.vu.nl
+Optimize a model with 1920 rows, 2880 columns and 9440 nonzeros
+Model fingerprint: 0x81cfdf66
+Variable types: 0 continuous, 2880 integer (2880 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 641.0328958
+Presolve time: 0.01s
+Presolved: 1920 rows, 2880 columns, 9440 nonzeros
+Variable types: 0 continuous, 2880 integer (2880 binary)
+
+Root relaxation: objective 3.773415e+01, 1349 iterations, 0.03 seconds (0.02 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   37.73415    0  328  641.03290   37.73415  94.1%     -    0s
+H    0     0                     325.9758157   37.73415  88.4%     -    0s
+H    0     0                     267.6263604   37.73415  85.9%     -    0s
+H    0     0                      66.8001368   37.73415  43.5%     -    0s
+     0     0   42.42611    0  365   66.80014   42.42611  36.5%     -    0s
+H    0     0                      43.1385375   42.42611  1.65%     -    0s
+
+Cutting planes:
+  Gomory: 6
+  Zero half: 54
+  RLT: 23
+
+Explored 1 nodes (2731 simplex iterations) in 0.17 seconds (0.09 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 5: 43.1385 66.8001 267.626 ... 641.033
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.313853745240e+01, best bound 4.313853745240e+01, gap 0.0000%

@@ -1,0 +1,47 @@
+
+Gurobi 10.0.1 (linux64) logging started Sun Nov 26 15:38:35 2023
+
+Set parameter LogFile to value "ArtificialInstance/ExperimentV2/S3T5K1/BaDo/gurobi11.txt"
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: AMD EPYC 7H12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Academic license 656792 - for non-commercial use only - registered to b.___@student.vu.nl
+Optimize a model with 420 rows, 720 columns and 2240 nonzeros
+Model fingerprint: 0xa88fde4a
+Variable types: 0 continuous, 720 integer (720 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e+00, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 372.5547556
+Presolve time: 0.00s
+Presolved: 420 rows, 720 columns, 2240 nonzeros
+Variable types: 0 continuous, 720 integer (720 binary)
+
+Root relaxation: objective 3.075249e+01, 329 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   30.75249    0   60  372.55476   30.75249  91.7%     -    0s
+H    0     0                     153.0916509   30.75249  79.9%     -    0s
+H    0     0                     115.2946109   30.75249  73.3%     -    0s
+H    0     0                      49.4678206   30.75249  37.8%     -    0s
+     0     0   33.40123    0   72   49.46782   33.40123  32.5%     -    0s
+H    0     0                      35.3377267   33.40123  5.48%     -    0s
+
+Cutting planes:
+  Gomory: 5
+  Zero half: 29
+  RLT: 1
+
+Explored 1 nodes (665 simplex iterations) in 0.03 seconds (0.01 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 5: 35.3377 49.4678 115.295 ... 372.555
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.533772667144e+01, best bound 3.533772667144e+01, gap 0.0000%
